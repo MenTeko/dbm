@@ -1,0 +1,418 @@
+{
+  "name": "channelinfo",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "bkfpX",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "server.name",
+      "name": "Store Server Info"
+    },
+    {
+      "info": "0",
+      "find": "795127537235787807",
+      "storage": "1",
+      "varName": "zoro",
+      "find2": "0",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "server.icon.url",
+      "name": "Store Server Info"
+    },
+    {
+      "info": "4",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "channel.ping",
+      "name": "Store Command Params"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "server.name2",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "2",
+      "varName": "zoro",
+      "info": "16",
+      "storage": "1",
+      "varName2": "zoro.avatar.url2",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "0",
+      "find": "795127537235787807",
+      "storage": "1",
+      "varName": "zoro2",
+      "find2": "0",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "server.icon.url2",
+      "name": "Store Server Info"
+    },
+    {
+      "condition": "2",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "29",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "channel.object",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "channel.name",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel.id",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "channel.topic",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "channel.position",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "10",
+      "storage": "1",
+      "varName2": "channel.category.id",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "9",
+      "storage": "1",
+      "varName2": "channel.date.creation",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "6",
+      "storage": "1",
+      "varName2": "channel.nsfw",
+      "name": "Store Channel Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"server.name2\")}",
+      "color": "00FF49",
+      "url": "",
+      "authorIcon": "${tempVars(\"server.icon.url2\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://media.discordapp.net/attachments/668494382004961280/795833504431734827/e2336409b9832dcb.png",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Nom du salon",
+      "message": "${tempVars(\"channel.object\")} (`${tempVars(\"channel.name\")}`)",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Identifiant",
+      "message": "${tempVars(\"channel.id\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Identifiant de la catégorie",
+      "message": "${tempVars(\"channel.category.id\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Position du salon",
+      "message": "${tempVars(\"channel.position\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Topic",
+      "message": "${tempVars(\"channel.topic\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "NSFW ?",
+      "message": "${tempVars(\"channel.nsfw\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "fieldName": "Date de création",
+      "message": "${tempVars(\"channel.date.creation\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "message": "Zoro",
+      "footerIcon": "${tempVars(\"zoro.avatar.url2\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.non.ping",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "channel.object.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "channel.name.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel.id.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "channel.topic.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "channel.position.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "10",
+      "storage": "1",
+      "varName2": "channel.category.id.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "9",
+      "storage": "1",
+      "varName2": "channel.date.creation.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "6",
+      "storage": "1",
+      "varName2": "channel.nsfw.mentioned",
+      "name": "Store Channel Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"server.name\")}",
+      "color": "00FF49",
+      "url": "",
+      "authorIcon": "${tempVars(\"server.icon.url\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://media.discordapp.net/attachments/668494382004961280/795833504431734827/e2336409b9832dcb.png",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Nom du salon",
+      "message": "${tempVars(\"channel.object.mentioned\")} (`${tempVars(\"channel.name.mentioned\")}`)",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Identifiant",
+      "message": "${tempVars(\"channel.id.mentioned\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Identifiant de la catégorie",
+      "message": "${tempVars(\"channel.category.id.mentioned\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Position du salon",
+      "message": "${tempVars(\"channel.position.mentioned\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Topic",
+      "message": "${tempVars(\"channel.topic.mentioned\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "NSFW ?",
+      "message": "${tempVars(\"channel.nsfw.mentioned\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "fieldName": "Date de création",
+      "message": "${tempVars(\"channel.date.creation.mentioned\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "member": "2",
+      "varName": "zoro",
+      "info": "16",
+      "storage": "1",
+      "varName2": "zoro.avatar.url6",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "message": "Zoro",
+      "footerIcon": "${tempVars(\"zoro.avatar.url6\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed.message.ping",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
